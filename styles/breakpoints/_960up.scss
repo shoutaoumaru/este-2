@@ -1,0 +1,171 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.c-container {
+  padding: 0 10vw;
+}
+
+.tit {
+  & .ja {
+    font-size: 24px;
+  }
+
+  & .en {
+    font-size: 18px;
+  }
+}
+
+.c-title {
+  .en {
+    font-size: 36px;
+  }
+
+  .ja {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+}
+
+.view-more {
+  text-align: center;
+
+  & span {
+    font-size: 1.4rem;
+  }
+}
+
+//.header
+.p-header {
+  & .logo__img {
+    margin-left: 50px;
+  }
+
+  & .logo {
+    height: 70px;
+    width: 160px;
+  }
+
+  & .mobile-button {
+    top: 25px;
+    right: 40px;
+  }
+}
+
+//.firstview
+.p-firstview {
+  & .swiper-container {
+    height: 100vh;
+  }
+}
+
+//.p-news
+.p-news {
+  &__link {
+    padding: 4vw;
+    font-size: 1.2rem;
+  }
+
+  & .view-more {
+    &__link {
+      & span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+
+//.p-footer 
+.p-footer {
+  &__logo {
+
+    & img {
+      width: 60%;
+    }
+  }
+
+  &__nav {
+    li {
+      .c-txt-sm {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// * * * * * * * * * 初めての方へ * * * * * * 
+.c-first {
+  .c-flow {
+    & .item-img {
+      & img {
+        width: 85%;
+      }
+    }
+  }
+}
+
+// * * * * * * * * * 料金体系 * * * * * * 
+.c-price {
+  &__img {
+    height: 250px;
+  }
+}
+
+// * * * * * * * * * お知らせ一覧 * * * * * * 
+.news-wrapper {
+  .c-title {
+    margin-bottom: 50px;
+  }
+}
+
+// * * * * * * * * * よくあるご質問 * * * * * * 
+.faq-wrapper {
+  .faq-contents {
+    .c-container {
+      padding: 0 20vw;
+    }
+
+    .faq {
+      &__title {
+        margin-bottom: 5vw;
+      }
+
+      &__block {
+
+        & dt,
+        & dd {
+          & .c-txt-md {
+            font-size: 24px;
+          }
+        }
+      }
+
+      & dt {
+        padding: 0 0 2vw 0;
+
+        span {
+          &::after {
+            height: 24px;
+          }
+        }
+      }
+
+      & .c-title {
+        font-size: 26px;
+      }
+
+      & .c-txtarea01 {
+
+        & .c-txt-sm {
+          font-size: 20px;
+        }
+      }
+
+      & .c-txt-sm {
+        font-size: 24px;
+      }
+    }
+  }
+}

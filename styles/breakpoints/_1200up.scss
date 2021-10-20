@@ -1,0 +1,107 @@
+/******************************************************************
+
+Stylesheet: 1200px以上のモニタで適用
+
+******************************************************************/
+.view-more {
+  margin-top: 6vw;
+}
+
+//.p-header
+.p-header {
+  .pc-container {
+    .pc-nav-item {
+      padding-top: 2.5vw;
+    }
+  }
+}
+
+//.p-firstview
+.p-firstview {
+  & .swiper-container {
+    .view-sp {
+      display: none;
+    }
+  }
+}
+
+//.p-concept
+.p-concept {
+  padding: 5vw 0 0 0;
+
+  &__img {
+    width: 38%;
+    padding-bottom: 5vw;
+    margin-top: 12vw;
+  }
+
+  &__block {
+    margin-top: 10vw;
+  }
+}
+
+//.p-news
+.p-news {
+  padding: 5vw 0;
+
+  &__tit {
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+
+  &__link {
+    padding: 2vw 4vw;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+.c-news {
+
+  &__title {
+    margin-bottom: 5vw !important;
+  }
+
+  &__list {
+    font-size: 1.5rem;
+
+    & a {
+      padding: 2vw 0 2vw 5vw;
+    }
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  & .c-container {
+    padding: 5vw 15vw;
+  }
+}
+
+//* * * * * * 採用情報 * * * * * * * 
+.c-recruit {
+  .c-container {
+    padding: 0 18vw;
+  }
+
+  .recruit-message {
+    margin: 0 -5vw;
+
+    ul {
+      li {
+        .points-title {
+          margin-bottom: 30px;
+
+          & .c-txt-lr {
+            font-size: 22px;
+          }
+        }
+
+        .points-desc {
+          & .c-txt-sm {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
