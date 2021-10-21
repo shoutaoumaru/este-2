@@ -365,7 +365,7 @@ a {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -380,7 +380,7 @@ a {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -395,7 +395,7 @@ a {
 .icon-map::before {
   content: "";
   display: block;
-  background-image: url(/images/common/icon-map.png);
+  background-image: url(../images/common/icon-map.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -416,7 +416,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -448,7 +448,7 @@ a {
   margin: auto;
   height: 20px;
   width: 20px;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -463,7 +463,7 @@ a {
   margin: auto;
   height: 14px;
   width: 14px;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -542,7 +542,7 @@ a {
 }
 
 .more-btn__link span:first-child::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -550,7 +550,7 @@ a {
   bottom: 0;
   margin: auto;
   width: 20px;
-  background-image: url(/images/common/arrow-wh.png);
+  background-image: url(../images/common/arrow-wh.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -596,7 +596,7 @@ a {
 }
 
 .more-btn__link.slide-bg:hover span:first-child::before {
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
 }
 
 @media (min-width: 600px) {
@@ -849,7 +849,7 @@ a {
   content: "";
   height: 10px;
   width: 10px;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1181,7 +1181,7 @@ a {
 }
 
 .faq-wrapper .faq dt::before {
-  content: 'Q';
+  content: "Q";
   position: absolute;
   top: -5px;
   left: 0;
@@ -1204,7 +1204,7 @@ a {
 }
 
 .faq-wrapper .faq dt span::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1212,12 +1212,12 @@ a {
   right: 0;
   width: 16px;
   height: 16px;
-  background-image: url(/images/common/arrow-down.png);
+  background-image: url(../images/common/arrow-down.png);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .faq-wrapper .faq dd {
@@ -1225,7 +1225,7 @@ a {
 }
 
 .faq-wrapper .faq dd::before {
-  content: 'A';
+  content: "A";
   position: absolute;
   top: 0;
   left: 0;
@@ -1328,7 +1328,7 @@ a {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1371,7 +1371,7 @@ a {
 
 .c-news__contents {
   line-height: 2;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news__title {
@@ -1402,7 +1402,7 @@ a {
 .c-news-sl__link {
   margin: 0 0 10vw 0;
   text-align: right;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .c-news-sl__link a {
@@ -1488,7 +1488,7 @@ a {
 }
 
 .c-contact .contact-form .must::after {
-  content: '*';
+  content: "*";
   font-size: 14px;
   color: #1d649e;
 }
@@ -1711,7 +1711,7 @@ a {
   right: 5px;
   bottom: 0;
   margin: auto;
-  content: '';
+  content: "";
   display: inline-block;
   height: 18px;
   width: 18px;
@@ -1920,7 +1920,7 @@ a {
 }
 
 .p-header .logo {
-  background-image: url(/images/common/riv_logo_official2.png);
+  background-image: url(../images/common/riv_logo_official2.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -2101,10 +2101,10 @@ a {
     left: 5px;
     bottom: 0;
     margin: auto;
-    content: '';
+    content: "";
     height: 18px;
     width: 18px;
-    background-image: url(/images/common/tel-white.png);
+    background-image: url(../images/common/tel-white.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -2114,10 +2114,10 @@ a {
     left: 5px;
     bottom: 0;
     margin: auto;
-    content: '';
+    content: "";
     height: 18px;
     width: 18px;
-    background-image: url(/images/common/icon-link-1-white.png);
+    background-image: url(../images/common/icon-link-1-white.png);
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -2249,7 +2249,7 @@ a {
   left: 0;
   right: 0;
   margin: auto;
-  content: '';
+  content: "";
   display: block;
   height: 22px;
   width: 22px;
@@ -2258,15 +2258,15 @@ a {
 }
 
 .contact-btn-item .tel::before {
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
 }
 
 .contact-btn-item .mail::before {
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
 }
 
 .contact-btn-item .insta::before {
-  background-image: url(/images/common/insta-black.png);
+  background-image: url(../images/common/insta-black.png);
 }
 
 .appear.up .item {

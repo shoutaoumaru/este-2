@@ -75,7 +75,7 @@ a {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -90,7 +90,7 @@ a {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/icon-link-1-black.png);
+  background-image: url(../images/common/icon-link-1-black.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -104,7 +104,7 @@ a {
   &::before {
     content: "";
     display: block;
-    background-image: url(/images/common/icon-map.png);
+    background-image: url(../images/common/icon-map.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -125,7 +125,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(/images/common/icon-insta-gr.png);
+    background-image: url(../images/common/icon-insta-gr.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -156,7 +156,7 @@ a {
       margin: auto;
       height: 20px;
       width: 20px;
-      background-image: url(/images/common/icon-insta-gr.png);
+      background-image: url(../images/common/icon-insta-gr.png);
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -171,7 +171,7 @@ a {
       margin: auto;
       height: 14px;
       width: 14px;
-      background-image: url(/images/common/arrow.png);
+      background-image: url(../images/common/arrow.png);
       background-repeat: no-repeat;
       background-size: contain;
     }
@@ -185,14 +185,13 @@ a {
     height: 35vh;
   }
 
-  @media (max-width:599px) {
+  @media (max-width: 599px) {
     .view-pc {
       display: none;
     }
   }
 
   @media (min-width: 600px) {
-
     .view-sp {
       display: none;
     }
@@ -250,7 +249,7 @@ a {
         padding-right: 30px;
 
         &::before {
-          content: '';
+          content: "";
           display: block;
           position: absolute;
           top: 0;
@@ -258,7 +257,7 @@ a {
           bottom: 0;
           margin: auto;
           width: 20px;
-          background-image: url(/images/common/arrow-wh.png);
+          background-image: url(../images/common/arrow-wh.png);
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
@@ -294,16 +293,15 @@ a {
           transition: transform 0.3s;
 
           &:first-child {
-
             &::before {
-              background-image: url(/images/common/arrow.png);
+              background-image: url(../images/common/arrow.png);
             }
           }
         }
       }
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       padding: 20px 40px;
       height: auto;
 
@@ -358,7 +356,6 @@ a {
   }
 
   &__img {
-
     & img {
       box-shadow: 20px 20px 35px rgb(199, 199, 199);
     }
@@ -393,15 +390,15 @@ a {
     @extend .pb-md;
   }
 
-  @media (max-width:599px) {
+  @media (max-width: 599px) {
     .view-pc {
-      display: none
+      display: none;
     }
   }
 
-  @media (min-width:600px) {
+  @media (min-width: 600px) {
     .view-sp {
-      display: none
+      display: none;
     }
   }
 }
@@ -452,7 +449,6 @@ a {
 
     & .name {
       font-weight: bold;
-
     }
 
     & .tit {
@@ -464,7 +460,7 @@ a {
 
   .p-voice01 {
     &__img {
-      text-align: center
+      text-align: center;
     }
   }
 }
@@ -497,7 +493,7 @@ a {
     & dt {
       & span {
         display: block;
-        font-size: 12px
+        font-size: 12px;
       }
     }
 
@@ -512,11 +508,9 @@ a {
         margin-top: -5px;
       }
     }
-
-
   }
 
-  @media (max-width:599px) {
+  @media (max-width: 599px) {
     .view-pc {
       display: none;
     }
@@ -649,7 +643,7 @@ a {
           content: "";
           height: 10px;
           width: 10px;
-          background-image: url(/images/common/arrow.png);
+          background-image: url(../images/common/arrow.png);
           background-repeat: no-repeat;
           background-size: contain;
         }
@@ -682,7 +676,7 @@ a {
   }
 }
 
-//* * * * * * 初めての方へ * * * * * * * 
+//* * * * * * 初めての方へ * * * * * * *
 .c-first,
 .c-price {
   .c-features {
@@ -698,18 +692,18 @@ a {
 
     &__img {
       @extend .mb-sm;
-      height: 220px
+      height: 220px;
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       &__img {
-        height: 300px
+        height: 300px;
       }
     }
 
-    @media (min-width:960px) {
+    @media (min-width: 960px) {
       &__img {
-        height: 350px
+        height: 350px;
       }
     }
 
@@ -788,7 +782,6 @@ a {
       &::after {
         border-color: #fff transparent transparent transparent;
       }
-
     }
 
     #flow08 {
@@ -814,20 +807,20 @@ a {
     }
   }
 
-  @media (max-width:599px) {
+  @media (max-width: 599px) {
     & .item-img.view-pc {
-      display: none
+      display: none;
     }
   }
 
-  @media (min-width:600px) {
+  @media (min-width: 600px) {
     & .item-img.view-sp {
-      display: none
+      display: none;
     }
   }
 }
 
-//* * * * * * 料金体系 * * * * * * * 
+//* * * * * * 料金体系 * * * * * * *
 .c-price {
   @extend .mb-lr;
 
@@ -890,12 +883,10 @@ a {
         margin-top: -5px;
       }
     }
-
-
   }
 }
 
-//* * * * * * スタッフ紹介 * * * * * * * 
+//* * * * * * スタッフ紹介 * * * * * * *
 .c-staff-wrapper {
   .c-features {
     @extend .mb-md;
@@ -904,8 +895,6 @@ a {
       margin-bottom: 15px;
     }
   }
-
-
 
   .c-staff {
     @extend .mb-md;
@@ -963,7 +952,7 @@ a {
   }
 }
 
-//* * * * * * 採用情報 * * * * * * * 
+//* * * * * * 採用情報 * * * * * * *
 .c-recruit {
   @extend .mb-lr;
 
@@ -973,7 +962,6 @@ a {
   }
 
   &__points {
-
     & li {
       @extend .mb-md;
     }
@@ -1047,13 +1035,12 @@ a {
     }
   }
 
-  @media (max-width:599px) {
+  @media (max-width: 599px) {
     th {
       color: $cBlack;
       margin-bottom: 5px;
     }
   }
-
 
   .points-title {
     .c-txt-lg {
@@ -1061,10 +1048,9 @@ a {
       display: block;
     }
   }
-
 }
 
-//* * * * * * よくあるご質問 * * * * * * * 
+//* * * * * * よくあるご質問 * * * * * * *
 .faq-wrapper {
   overflow: hidden;
 
@@ -1090,7 +1076,7 @@ a {
       padding: 0 0 6vw 0;
 
       &::before {
-        content: 'Q';
+        content: "Q";
         position: absolute;
         top: -5px;
         left: 0;
@@ -1112,7 +1098,7 @@ a {
         padding-left: 3vw;
 
         &::after {
-          content: '';
+          content: "";
           position: absolute;
           top: 0;
           bottom: 0;
@@ -1120,12 +1106,11 @@ a {
           right: 0;
           width: 16px;
           height: 16px;
-          background-image: url(/images/common/arrow-down.png);
+          background-image: url(../images/common/arrow-down.png);
           background-position: top center;
           background-repeat: no-repeat;
           background-size: contain;
-          transition: all .2s;
-
+          transition: all 0.2s;
         }
       }
     }
@@ -1134,7 +1119,7 @@ a {
       position: relative;
 
       &::before {
-        content: 'A';
+        content: "A";
         position: absolute;
         top: 0;
         left: 0;
@@ -1161,7 +1146,7 @@ a {
   }
 }
 
-//* * * * * * お知らせ一覧 * * * * * * * 
+//* * * * * * お知らせ一覧 * * * * * * *
 .c-news {
   padding: 0 0 10vw 0;
   letter-spacing: 3px;
@@ -1182,7 +1167,6 @@ a {
       margin-top: 2vw;
       color: $cBlack;
     }
-
   }
 
   &__date {
@@ -1232,7 +1216,7 @@ a {
         content: "";
         position: absolute;
         right: 0;
-        background-image: url(/images/common/arrow.png);
+        background-image: url(../images/common/arrow.png);
         background-position: right center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -1241,16 +1225,15 @@ a {
         height: 12px;
         margin-left: 8px;
       }
-
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       & .next {
         display: none;
       }
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 45px;
         height: 45px;
@@ -1261,7 +1244,7 @@ a {
       }
     }
 
-    @media (min-width:900px) {
+    @media (min-width: 900px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 55px;
         height: 55px;
@@ -1281,7 +1264,7 @@ a {
 
   &__contents {
     line-height: 2;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   &__title {
@@ -1296,9 +1279,8 @@ a {
   }
 }
 
-//* * * * * * お知らせ詳細 * * * * 
+//* * * * * * お知らせ詳細 * * * *
 .c-news-sl {
-
   & .c-container {
     padding: 0 5vw 0 5vw;
   }
@@ -1315,7 +1297,7 @@ a {
   &__link {
     margin: 0 0 10vw 0;
     text-align: right;
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     & a {
       display: inline-block;
@@ -1329,7 +1311,7 @@ a {
   }
 }
 
-//* * * * * * お問い合わせフォーム * * * * * 
+//* * * * * * お問い合わせフォーム * * * * *
 .c-contact {
   background-color: $cBg;
 
@@ -1409,7 +1391,7 @@ a {
       margin-right: 10px;
 
       &::after {
-        content: '*';
+        content: "*";
         font-size: 14px;
         color: rgb(29, 100, 158);
       }
@@ -1421,7 +1403,6 @@ a {
     }
 
     .ct-request {
-
       & select {
         width: 100%;
       }
@@ -1490,7 +1471,6 @@ a {
     }
 
     & .wpcf7-acceptance {
-
       & input {
         height: 20px;
         width: 20px;
@@ -1513,7 +1493,6 @@ a {
 
       & input:disabled {
         border-color: $cGray;
-
       }
 
       & input {
@@ -1531,7 +1510,7 @@ a {
       display: none;
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       & .c-contact-text {
         font-size: 18px;
       }
@@ -1559,7 +1538,6 @@ a {
       }
 
       & .submit-btn {
-
         & input {
           width: 70%;
           max-width: 320px;
@@ -1569,7 +1547,6 @@ a {
       }
 
       & .wpcf7-acceptance {
-
         & input {
           height: 30px;
           width: 30px;
@@ -1580,11 +1557,9 @@ a {
       & .ms-1 {
         font-size: 18px;
       }
-
     }
 
-    @media (min-width:1200px) {
-
+    @media (min-width: 1200px) {
       dl {
         width: 800px;
       }
@@ -1661,7 +1636,6 @@ a {
       transition: all 0.3s;
       letter-spacing: 2px;
 
-
       &:hover {
         letter-spacing: 5px;
         transition: all 0.3s;
@@ -1673,7 +1647,7 @@ a {
         right: 5px;
         bottom: 0;
         margin: auto;
-        content: '';
+        content: "";
         display: inline-block;
         height: 18px;
         width: 18px;

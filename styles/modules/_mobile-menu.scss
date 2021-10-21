@@ -20,7 +20,7 @@
   }
 
   & .logo {
-    background-image: url(/images/common/riv_logo_official2.png);
+    background-image: url(../images/common/riv_logo_official2.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@
     outline: none !important;
     cursor: pointer;
 
-    &>span {
+    & > span {
       background-color: black;
       width: 25px;
       height: 1px;
@@ -54,7 +54,7 @@
       }
     }
 
-    @media (min-width:600px) {
+    @media (min-width: 600px) {
       & span {
         width: 35px;
         margin-bottom: 9px;
@@ -107,8 +107,7 @@
     }
   }
 
-  @media (min-width:960px) {
-
+  @media (min-width: 960px) {
     .mobile-container {
       display: none;
     }
@@ -130,7 +129,6 @@
       background-color: rgba(255, 255, 255, 0.3);
       backdrop-filter: blur(5px);
       border-bottom: 1px solid rgb(36, 36, 36);
-
 
       & .pc-nav {
         margin-bottom: 10px;
@@ -190,10 +188,10 @@
             left: 5px;
             bottom: 0;
             margin: auto;
-            content: '';
+            content: "";
             height: 18px;
             width: 18px;
-            background-image: url(/images/common/tel-white.png);
+            background-image: url(../images/common/tel-white.png);
             background-size: contain;
             background-repeat: no-repeat;
           }
@@ -206,10 +204,10 @@
             left: 5px;
             bottom: 0;
             margin: auto;
-            content: '';
+            content: "";
             height: 18px;
             width: 18px;
-            background-image: url(/images/common/icon-link-1-white.png);
+            background-image: url(../images/common/icon-link-1-white.png);
             background-size: contain;
             background-repeat: no-repeat;
           }
@@ -233,12 +231,10 @@
       transition: all 0.4s;
     }
   }
-
 }
 
 // メニューオープン
 .menu-open {
-
   &.mobile-menu {
     opacity: 1;
     z-index: 3000;
@@ -252,14 +248,14 @@
   }
 
   .mobile-menu__btn {
-    &>span {
+    & > span {
       background-color: black;
 
       &:nth-child(1) {
         transition-delay: 70ms;
         transform: translateY(6px) rotate(135deg);
 
-        @media (min-width:600px) {
+        @media (min-width: 600px) {
           transform: translateY(10px) rotate(135deg);
         }
       }
@@ -337,7 +333,7 @@
         left: 0;
         right: 0;
         margin: auto;
-        content: '';
+        content: "";
         display: block;
         height: 22px;
         width: 22px;
@@ -348,19 +344,19 @@
 
     & .tel {
       &::before {
-        background-image: url(/images/common/icon-tel.png);
+        background-image: url(../images/common/icon-tel.png);
       }
     }
 
     & .mail {
       &::before {
-        background-image: url(/images/common/icon-link-1-black.png);
+        background-image: url(../images/common/icon-link-1-black.png);
       }
     }
 
     & .insta {
       &::before {
-        background-image: url(/images/common/insta-black.png);
+        background-image: url(../images/common/insta-black.png);
       }
     }
   }
