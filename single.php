@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>お知らせ詳細 | エステテンプレート2</title>
-  <link rel="stylesheet" href="/styles/vendor/animsition.min.css">
-  <link rel="stylesheet" href="/styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="/styles/style.css">
+  <?php get_header(); ?>
 </head>
 
 <body class="animsition">
@@ -82,7 +80,7 @@
     <!-- /.header -->
     <section class="c-topview">
       <div class="c-topview__img">
-        <img src="/images/home/este_2@pc.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/home/este_2@pc.jpg" alt="">
       </div>
     </section>
     <!-- /.c-topview -->
@@ -93,98 +91,38 @@
           <span class="ja">ニュース</span>
         </h2>
         <ul class="c-news-sl__list">
-          <li class="c-news-sl__block">
-            <div class="c-news-sl__tit">
-              <p class="c-txt-md">ホームページリニューアルについて。</p>
-              <span class="c-news-sl__date c-txt-sm">2021.4.5</span>
-            </div>
-            <div class="c-news-sl__contents">
-              <p class="c-txt-sm">株式会社RivRoundのWebサイトが新しく生まれ変わりました。
-                今まで以上にお客様に喜んでいただけますよう、さらなるサービス向上を目指してまいります。
-                今後とも、どうぞよろしくお願いいたします。
-              </p>
-            </div>
-          </li>
+          <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+            <li class="c-news-sl__block">
+              <div class="c-news-sl__tit">
+                <span class="htumbnail"><?php the_post_thumbnail(); ?></span>
+                <p class="c-txt-md"><?php the_title(); ?></p>
+                <span class="c-news-sl__date c-txt-sm"><?php the_date(); ?></span>
+              </div>
+              <div class="c-news-sl__contents">
+                <p class="c-txt-sm"><?php the_content(); ?>
+                </p>
+              </div>
+            </li>
+          <?php endwhile; ?>
+          <?php endif; ?>
         </ul>
         <div class="c-news-sl__link">
-          <a class="more-link animsition-link" href="/news/news.html"><span class="readmore c-txt-sm">一覧へ戻る</span></a>
+          <a class="more-link animsition-link" href=" <?php echo esc_url( home_url('/news')); ?>"><span class="readmore c-txt-sm">一覧へ戻る</span></a>
         </div>
       </div>
     </section>
     <!-- /.news-top -->
-    <footer class="p-footer">
-      <div class="c-container">
-        <div class="p-footer__wrap">
-          <div class="p-footer__logo">
-            <img src="/images/common/riv_logo_official2.png" alt="">
-          </div>
-          <div class="p-footer__nav">
-            <ul>
-              <li>
-                <a class="animsition-link" href="/"><span class="c-txt-sm">ホーム</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/first/first.html"><span class="c-txt-sm">初めての方へ</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/price/price.html"><span class="c-txt-sm">料金体系</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/staff/staff.html"><span class="c-txt-sm">スタッフ紹介</span></a>
-              </li>
-
-              <li>
-                <a class="animsition-link" href="/faq/faq.html"><span class="c-txt-sm">よくあるご質問</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/news/news.html"><span class="c-txt-sm">お知らせ</span></a>
-              </li>
-              <li>
-                <a class="animsition-link" href="/recruit/recruit.html"><span class="c-txt-sm">採用情報</span></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="copyright">&copy;2021 RivRound</div>
-      </div>
-    </footer>
+    <?php get_footer(); ?>
     <!-- /.footer -->
-    <div class="mobile-menu">
-      <nav class="mobile-menu__nav">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item"><a class="animsition-link" href="/">ホーム</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/first/first.html">初めての方へ</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/price/price.html">料金体系</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/staff/staff.html">スタッフ紹介</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/faq/faq.html">よくあるご質問</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/news/news.html">お知らせ</a></li>
-          <li class="mobile-menu__item"><a class="animsition-link" href="/recruit/recruit.html">採用情報</a></li>
-        </ul>
-        <div class="contact-btn">
-          <ul class="contact-btn-list">
-            <li class="contact-btn-item">
-              <a href="tel:05031599527">
-                <span class="tel">電話予約</span>
-              </a>
-            </li>
-            <li class="contact-btn-item">
-              <a target="_blank" href="https://beauty.hotpepper.jp/">
-                <span class="mail">オンライン予約</span>
-              </a>
-            </li>
-        </div>
-        </ul>
-      </nav>
-    </div>
     <!-- /.mobile-menu -->
   </div>
   <!-- .superwrapper -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <script src="/scripts/libs/scroll-btn.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="/scripts/libs/scroll.js"></script>
-  <script src="/scripts/libs/mobile-menu.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/vendor/animsition.min.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll-btn.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/page.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/scroll.js"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/scripts/libs/mobile-menu.js"></script>
 </body>
 
 </html>
