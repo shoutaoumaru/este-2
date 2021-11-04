@@ -107,13 +107,18 @@
     }
   }
 
+  & .hide {
+    &.sp-navbtn {
+      transform: translateY(100%);
+      transition: all 0.4s;
+    }
+  }
+
   @media (min-width:960px) {
 
-    .mobile-container {
-      display: none;
-    }
-
-    .sp-navbtn {
+    .mobile-container,
+    .sp-navbtn,
+    .mobile-menu {
       display: none;
     }
 
@@ -226,14 +231,6 @@
       }
     }
   }
-
-  & .hide {
-    &.sp-navbtn {
-      transform: translateY(100%);
-      transition: all 0.4s;
-    }
-  }
-
 }
 
 // メニューオープン

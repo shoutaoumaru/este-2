@@ -2017,11 +2017,17 @@ a {
   text-decoration: underline;
 }
 
+.p-header .hide.sp-navbtn {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
 @media (min-width: 960px) {
-  .p-header .mobile-container {
-    display: none;
-  }
-  .p-header .sp-navbtn {
+  .p-header .mobile-container,
+  .p-header .sp-navbtn,
+  .p-header .mobile-menu {
     display: none;
   }
   .p-header .pc-container {
@@ -2128,13 +2134,6 @@ a {
   .p-header .pc-container .logo__img .logo {
     width: 160px;
   }
-}
-
-.p-header .hide.sp-navbtn {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
 }
 
 .menu-open.mobile-menu {
