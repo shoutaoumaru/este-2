@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
   loadAnimation.forEach(function (element) {
     setTimeout(() => {
       element.classList.add("reveal");
-    }, 1000)
+    }, 3000)
   });
 });
